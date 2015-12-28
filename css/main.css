@@ -149,12 +149,12 @@ h2 {
 /*margin: -3px 0px 0px -1px;*/
 /*}*/
 
-/*.audiojs .scrubber {*/
-/*background: #5a5a5a;*/
-/*width: 150px;*/
-/*height: 10px;*/
-/*margin: 5px;*/
-/*}*/
+.audiojs .scrubber {
+    background: #5a5a5a;
+    width: 245px;
+    height: 20px;
+    margin: 7px;
+}
 
 /*.audiojs .progress {*/
 /*height: 10px;*/
@@ -171,11 +171,12 @@ h2 {
 /*background-image: -moz-linear-gradient(center top, #222 0%, #333 50%, #222 51%, #222 100%);*/
 /*}*/
 
-/*.audiojs .time {*/
+.audiojs .time {
 /*float: left;*/
 /*height: 25px;*/
 /*line-height: 25px;*/
-/*}*/
+    display: none;
+}
 
 /*.audiojs .error-message {*/
 /*height: 24px;*/
