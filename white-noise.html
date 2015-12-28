@@ -96,30 +96,26 @@
     })(this, this.document);
 </script>
 
-<script>
-    // custom page player configuration
-    var PP_CONFIG = {
-        autoStart: false,      // begin playing first sound when page loads
-        playNext: false,        // stop after one sound, or play through list until end
-        useThrottling: false,  // try to rate-limit potentially-expensive calls (eg. dragging position around)</span>
-        usePeakData: true,     // [Flash 9 only] whether or not to show peak data (left/right channel values) - nor noticable on CPU
-        useWaveformData: false,// [Flash 9 only] show raw waveform data - WARNING: LIKELY VERY CPU-HEAVY
-        useEQData: false,      // [Flash 9 only] show EQ (frequency spectrum) data
-        useFavIcon: false     // try to apply peakData to address bar (Firefox + Opera)
-    }
-
-</script>
 <div class="pure-g-center">
     <div class="pure-u-center">
-        <audio src="sounds/whitenoise/BrownianNoise.mp3" preload="auto"></audio>
+        <audio src="sounds/whitenoise/WhiteNoise.mp3" preload="none"></audio>
+        <div class="track-details">
+            White Noise
+        </div>
     </div>
     <br>
     <div class="pure-u-center">
-        <audio src="sounds/whitenoise/BrownianNoise.mp3" preload="auto"></audio>
+        <audio src="sounds/whitenoise/BrownianNoise.mp3" preload="none"></audio>
+        <div class="track-details">
+            Brownian Noise
+        </div>
     </div>
     <br>
     <div class="pure-u-center">
-        <audio src="sounds/whitenoise/BrownianNoise.mp3" preload="auto"></audio>
+        <audio src="sounds/whitenoise/PinkNoise.mp3" preload="none"></audio>
+        <div class="track-details">
+            Pink Noise
+        </div>
     </div>
 </div>
 
