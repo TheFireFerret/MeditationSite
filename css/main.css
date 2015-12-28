@@ -89,6 +89,7 @@ h2 {
     background: rgba(34, 34, 34, 0.5);
     padding: 20px;
     width: 100%;
+    z-index: -3;
     /*padding: ;*/
 }
 
