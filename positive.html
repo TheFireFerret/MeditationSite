@@ -51,14 +51,14 @@
 <script>
     (function (window, document) {
         var menu = document.getElementById('menu'),
-                WINDOW_CHANGE_EVENT = ('onorientationchange' in window) ? 'orientationchange' : 'resize';
+            WINDOW_CHANGE_EVENT = ('onorientationchange' in window) ? 'orientationchange' : 'resize';
 
         function toggleHorizontal() {
             [].forEach.call(
-                    document.getElementById('menu').querySelectorAll('.custom-can-transform'),
-                    function (el) {
-                        el.classList.toggle('pure-menu-horizontal');
-                    }
+                document.getElementById('menu').querySelectorAll('.custom-can-transform'),
+                function (el) {
+                    el.classList.toggle('pure-menu-horizontal');
+                }
             );
         }
 
@@ -98,7 +98,7 @@
 
         $('.positive-list').css({
             position: 'absolute',
-            left: ($(window).width() - $('.positive-list').outerWidth()) / 2 - 20,
+            left: ($(window).width() - $('.positive-list').outerWidth() - 20) / 2,
 //            top: ($(window).height() - $('.positive-list').outerHeight()) / 2
         });
     });
