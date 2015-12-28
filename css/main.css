@@ -87,8 +87,9 @@ h2 {
     font-size: 16px;
     line-height: 1.45;
     background: rgba(34, 34, 34, 0.5);
-    /*padding: 20px;*/
+    padding: 20px;
     width: 100%;
+    /*padding: ;*/
 }
 
 #clockdiv {
@@ -182,15 +183,10 @@ h2 {
     padding: 1px 6px;
     background: #eee;
     color: #222;
-    /*font-family: monospace;*/
     font-size: 14px;
     line-height: 20px;
     -webkit-box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.15);
     -moz-box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.15);
-}
-
-.track-details:before {
-    content: '♬ ';
 }
 
 .track-details em {
