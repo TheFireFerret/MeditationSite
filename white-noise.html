@@ -16,6 +16,8 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     <script src="js/flowtype.js"></script>
+    <script src="js/audiojs/audio.js"></script>
+
 
 </head>
 
@@ -46,6 +48,12 @@
         </div>
     </div>
 </div>
+
+<script>
+    audiojs.events.ready(function () {
+        var as = audiojs.createAll();
+    });
+</script>
 
 <script>
     (function (window, document) {
@@ -101,15 +109,19 @@
     }
 
 </script>
-
-<ul class="playlist">
-    <li><a href="sounds/whitenoise/WhiteNoise.mp3">White Noise</a></li>
+<div class="pure-g-center">
+    <div class="pure-u-center">
+        <audio src="sounds/whitenoise/BrownianNoise.mp3" preload="auto"></audio>
+    </div>
     <br>
-    <li><a href="sounds/whitenoise/BrownianNoise.mp3">Brownian Noise</a></li>
+    <div class="pure-u-center">
+        <audio src="sounds/whitenoise/BrownianNoise.mp3" preload="auto"></audio>
+    </div>
     <br>
-    <li><a href="sounds/whitenoise/PinkNoise.mp3">Pink Noise</a></li>
-    <span class="comment">click to play</span>
-</ul>
+    <div class="pure-u-center">
+        <audio src="sounds/whitenoise/BrownianNoise.mp3" preload="auto"></audio>
+    </div>
+</div>
 
 </body>
 </html>
