@@ -17,9 +17,8 @@ h2 {
     font-size: 3em;
 }
 
-.main {
-    padding: 2em;
-    color: black;
+.home {
+    font-size: 20px;
 }
 
 .pure-g > div {
