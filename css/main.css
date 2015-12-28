@@ -1,0 +1,102 @@
+
+body {
+    font-size: 16px;
+    text-align: center;
+    background: #00ECB9;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    line-height: 1.45;
+}
+
+h1 {
+    font-size: 4em;
+}
+
+h2 {
+    font-size: 3em;
+}
+
+.main {
+    padding: 2em;
+    color: black;
+}
+
+.pure-g > div {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.l-box {
+    padding: 1em;
+}
+
+.bell-label {
+    text-align: center;
+    font-weight: bold;
+}
+
+.page-relax {
+    background: url("../img/beach.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.page-positive {
+    background: url("../img/sky.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.relax-text {
+    text-align: center;
+    color: #FEFEFE;
+    font-size: 16px;
+    line-height: 1.45;
+    background: rgba(34, 34, 34, 0.5);
+    padding: 20px;
+    width: 100%;
+}
+
+.positive-list {
+    text-align: center;
+    color: #FEFEFE;
+    font-size: 16px;
+    line-height: 1.45;
+    background: rgba(34, 34, 34, 0.5);
+    padding: 20px;
+    width: 100%;
+}
+
+#clockdiv{
+    font-family: sans-serif;
+    color: #fff;
+    display: inline-block;
+    font-weight: 100;
+    text-align: center;
+    font-size: 60px;
+}
+
+#clockdiv > div{
+    padding: 10px;
+    border-radius: 3px;
+    background: #00BF96;
+    display: inline-block;
+}
+
+#clockdiv div > span{
+    padding: 15px;
+    border-radius: 3px;
+    background: #00816A;
+    display: inline-block;
+}
+
+.smalltext{
+    padding-top: 5px;
+    font-size: 16px;
+}
