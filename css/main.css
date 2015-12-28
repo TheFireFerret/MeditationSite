@@ -77,7 +77,8 @@ h2 {
     font-size: 16px;
     line-height: 1.45;
     background: rgba(34, 34, 34, 0.5);
-    /*padding: 20px;*/
+    position: relative;
+    margin-top: 20%;
     width: 100%;
 }
 
@@ -88,9 +89,10 @@ h2 {
     line-height: 1.45;
     background: rgba(34, 34, 34, 0.5);
     padding: 20px;
+    position: relative;
+    margin-top: 10%;
     width: 100%;
     z-index: -3;
-    /*padding: ;*/
 }
 
 #clockdiv {
@@ -121,8 +123,10 @@ h2 {
     font-size: 16px;
 }
 
-/*.audiojs {*/
-/*height: 22px;*/
+.audiojs {
+    width: 300px;
+
+    /*height: 22px;*/
 /*background: #404040;*/
 /*background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #444), color-stop(0.5, #555), color-stop(0.51, #444), color-stop(1, #444));*/
 /*background-image: -moz-linear-gradient(center top, #444 0%, #555 50%, #444 51%, #444 100%);*/
@@ -130,7 +134,7 @@ h2 {
 /*-moz-box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);*/
 /*-o-box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);*/
 /*box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);*/
-/*}*/
+}
 
 /*.audiojs .play-pause {*/
 /*width: 15px;*/
@@ -146,7 +150,7 @@ h2 {
 
 /*.audiojs .scrubber {*/
 /*background: #5a5a5a;*/
-/*width: 310px;*/
+/*width: 150px;*/
 /*height: 10px;*/
 /*margin: 5px;*/
 /*}*/
@@ -180,8 +184,8 @@ h2 {
 .track-details {
     clear: both;
     height: 20px;
-    width: 448px;
-    padding: 1px 6px;
+    width: 300px;
+    /*padding: 0px 6px;*/
     background: #eee;
     color: #222;
     font-size: 14px;
