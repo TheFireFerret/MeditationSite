@@ -182,8 +182,8 @@ h2 {
     padding: 1px 6px;
     background: #eee;
     color: #222;
-    font-family: monospace;
-    font-size: 11px;
+    /*font-family: monospace;*/
+    font-size: 14px;
     line-height: 20px;
     -webkit-box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.15);
     -moz-box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.15);
