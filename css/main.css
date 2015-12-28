@@ -123,6 +123,7 @@ h2 {
     height: 22px;
     background: #404040;
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #444), color-stop(0.5, #555), color-stop(0.51, #444), color-stop(1, #444));
+    background-image: -moz-linear-gradient(center top, #444 0%, #555 50%, #444 51%, #444 100%);
     -webkit-box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
     -moz-box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
     -o-box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
@@ -181,16 +182,16 @@ h2 {
     padding: 1px 6px;
     background: #eee;
     color: #222;
-    /*font-family: monospace;*/
-    font-size: 15px;
+    font-family: monospace;
+    font-size: 11px;
     line-height: 20px;
     -webkit-box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.15);
     -moz-box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.15);
 }
 
-/*.track-details:before {*/
-/*content: '♬ ';*/
-/*}*/
+.track-details:before {
+    content: '♬ ';
+}
 
 .track-details em {
     font-style: normal;
