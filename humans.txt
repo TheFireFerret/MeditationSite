@@ -8,8 +8,14 @@
 # THANKS
 
     random forum posts
+    bells from soundbible.com
+    timer bell from http://www.mindfulnessdc.org/mindfulclock.html
+    timer modified from http://www.sitepoint.com/build-javascript-countdown-timer-no-dependencies/
+
+
 
 # TECHNOLOGY COLOPHON
 
     CSS3, HTML5
-    Apache Server Configs, jQuery, Modernizr, Normalize.css, pure.css, soundmanager.js
+    Apache Server Configs, jQuery, Modernizr, pure.css, audio.js, flowtype.js
+    Built in WebStorm
