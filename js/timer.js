@@ -43,6 +43,10 @@ function start(){
 
     var timeInSeconds = parseInt(document.getElementById('sec').value);
 
+    if (isNaN(timeInMinutes) && isNaN(timeInSeconds)) {
+        return;
+    }
+
     if (isNaN(timeInMinutes)){
         timeInMinutes = 0;
     }
@@ -51,9 +55,6 @@ function start(){
     }
 
     var mseconds = (timeInMinutes*60 + timeInSeconds)*1000;
-
-
-
 
     var deadline = new Date(Date.parse(new Date()) + mseconds);
     initializeClock('clockdiv', deadline);
