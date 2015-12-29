@@ -53,14 +53,14 @@
 <script>
     (function (window, document) {
         var menu = document.getElementById('menu'),
-                WINDOW_CHANGE_EVENT = ('onorientationchange' in window) ? 'orientationchange' : 'resize';
+            WINDOW_CHANGE_EVENT = ('onorientationchange' in window) ? 'orientationchange' : 'resize';
 
         function toggleHorizontal() {
             [].forEach.call(
-                    document.getElementById('menu').querySelectorAll('.custom-can-transform'),
-                    function (el) {
-                        el.classList.toggle('pure-menu-horizontal');
-                    }
+                document.getElementById('menu').querySelectorAll('.custom-can-transform'),
+                function (el) {
+                    el.classList.toggle('pure-menu-horizontal');
+                }
             );
         }
 
@@ -121,27 +121,30 @@
         </div>
         <div><br></div>
         <div>
-            <button type="button" id='submit' class="pure-button pure-u-1 pure-u-md-1-3 pure-button-primary" onclick="start()">
+            <button type="button" id='submit' class="pure-button pure-u-1 pure-u-md-1-3 pure-button-primary"
+                    onclick="start()">
                 submit
             </button>
         </div>
         <div>
-            <button  class="pure-button pure-u-1 pure-u-md-1-3" onclick="reset()">reset</button>
+            <button class="pure-button pure-u-1 pure-u-md-1-3" onclick="reset()">reset</button>
         </div>
 
     </form>
 
     <script>
-        $("#form").keydown(function(event){
-            if(event.keyCode == 13){
+        $("#form").keydown(function (event) {
+            if (event.keyCode == 13) {
                 event.preventDefault();
                 $("#submit").click();
             }
         });
     </script>
 
-</div>
+    <audio id="ding" src="sounds/timer-ding.mp3"></audio>
 
+
+</div>
 
 </body>
 </html>

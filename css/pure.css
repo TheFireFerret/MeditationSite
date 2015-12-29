@@ -1373,7 +1373,8 @@ since IE8 won't execute CSS that contains a CSS3 selector.
 }
 
 .pure-menu-link {
-    color: #777;
+    color: #000000;
+    font-weight: bold;
 }
 
 .pure-menu-children {
@@ -1484,7 +1485,7 @@ striping:
 /*Responsive Menu*/
 
 .custom-wrapper {
-    background-color: #ffd390;
+    background-color: #fcffb3;
     margin-bottom: 1em;
     -webkit-font-smoothing: antialiased;
     height: 2.1em;

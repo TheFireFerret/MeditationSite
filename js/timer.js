@@ -30,6 +30,7 @@ function initializeClock(id, endtime) {
 
         if (t.total <= 0) {
             clearInterval(timeinterval);
+            document.getElementById('ding').play();
             //window.alert('Timer done!');
         }
     }
