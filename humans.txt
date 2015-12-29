@@ -13,7 +13,6 @@
     timer modified from http://www.sitepoint.com/build-javascript-countdown-timer-no-dependencies/
 
 
-
 # TECHNOLOGY COLOPHON
 
     CSS3, HTML5
