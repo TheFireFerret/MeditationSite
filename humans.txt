@@ -11,7 +11,7 @@
     bells from soundbible.com
     timer bell from http://www.mindfulnessdc.org/mindfulclock.html
     timer modified from http://www.sitepoint.com/build-javascript-countdown-timer-no-dependencies/
-
+    hosted on github pages
 
 # TECHNOLOGY COLOPHON
 
