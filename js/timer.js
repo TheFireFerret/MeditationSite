@@ -30,7 +30,7 @@ function initializeClock(id, endtime) {
 
         if (t.total <= 0) {
             clearInterval(timeinterval);
-            document.getElementById('ding').play();
+            playAudio();
         }
     }
 
@@ -38,6 +38,7 @@ function initializeClock(id, endtime) {
     var timeinterval = setInterval(updateClock, 1000);
 }
 
+var ding;
 function start(){
     var timeInMinutes = parseInt(document.getElementById('min').value);
 
@@ -57,6 +58,9 @@ function start(){
     var mseconds = (timeInMinutes*60 + timeInSeconds)*1000;
 
     var deadline = new Date(Date.parse(new Date()) + mseconds);
+
+    ding = new WebAudioAPISound("sounds/timer-ding");
+
     initializeClock('clockdiv', deadline);
 }
 
@@ -66,5 +70,12 @@ function reset() {
 
 function focus() {
     document.getElementById("min").focus();
+}
 
+function playAudio() {
+    if ((navigator.userAgent.toLowerCase().indexOf('chrome') <= -1)) {
+        ding.play();
+    } else {
+        document.getElementById('ding').play();
+    }
 }

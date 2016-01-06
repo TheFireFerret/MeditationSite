@@ -4,7 +4,6 @@ function playAudio(id) {
     } else {
         document.getElementById(id).play();
     }
-
 }
 
 var sounds = new Array(3);
