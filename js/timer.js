@@ -38,7 +38,6 @@ function initializeClock(id, endtime) {
     var timeinterval = setInterval(updateClock, 1000);
 }
 
-var ding;
 function start(){
     var timeInMinutes = parseInt(document.getElementById('min').value);
 
@@ -59,8 +58,6 @@ function start(){
 
     var deadline = new Date(Date.parse(new Date()) + mseconds);
 
-    ding = new WebAudioAPISound("sounds/timer-ding");
-
     initializeClock('clockdiv', deadline);
 }
 
@@ -70,6 +67,11 @@ function reset() {
 
 function focus() {
     document.getElementById("min").focus();
+}
+
+var ding;
+function initAudio() {
+    ding = new WebAudioAPISound("sounds/timer-ding");
 }
 
 function playAudio() {
