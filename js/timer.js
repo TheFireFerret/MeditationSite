@@ -78,6 +78,7 @@ function playAudio() {
     if ((navigator.userAgent.toLowerCase().indexOf('chrome') <= -1)) {
         ding.play();
     } else {
-        document.getElementById('ding').play();
+        //document.getElementById('ding').play();
+        ding.play();
     }
 }
