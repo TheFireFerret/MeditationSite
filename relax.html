@@ -95,8 +95,25 @@
         <div class="pure-u-1"> First notice your breath</div>
         <div class="pure-u-1"> Then put your hand on your chest</div>
         <div class="pure-u-1"> Then breathe</div>
+        <div class="pure-u-1"><input type="image" src="img/speaker.svg" width="5%" height="5%"
+                                     style="-webkit-filter: invert(100%)" onclick="playAudio()"></div>
     </div>
 </div>
+
+<script>
+    var audio = new Audio("sounds/voiceovers/relax.mp3");
+    var played = 0;
+    function playAudio() {
+        if (played == 0) {
+            audio.play();
+            played = 1;
+        } else {
+            audio.currentTime = 0;
+            audio.pause();
+            played = 0;
+        }
+    }
+</script>
 
 <script>
     $('body>.relax-text').flowtype({

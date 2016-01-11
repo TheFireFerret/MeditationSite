@@ -101,8 +101,25 @@
         <div class="pure-u-1"> content</div>
         <div class="pure-u-1"> helpful</div>
         <div class="pure-u-1"> centered</div>
+        <div class="pure-u-1"><input type="image" src="img/speaker.svg" width="5%" height="5%"
+                                     style="-webkit-filter: invert(100%)" onclick="playAudio()"></div>
     </div>
 </div>
+
+<script>
+    var audio = new Audio("sounds/voiceovers/positive.mp3");
+    var played = 0;
+    function playAudio() {
+        if (played == 0) {
+            audio.play();
+            played = 1;
+        } else {
+            audio.currentTime = 0;
+            audio.pause();
+            played = 0;
+        }
+    }
+</script>
 
 <script>
     $('body>.positive-list').flowtype({
